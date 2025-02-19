@@ -5,6 +5,11 @@ import { FaHotel } from "react-icons/fa";
 import { FaBusAlt } from "react-icons/fa";
 import { FaHandsHelping } from "react-icons/fa";
 import { FaMosque } from "react-icons/fa";
+import img8 from '../assets/img8.webp';
+import img9 from '../assets/img9.webp';
+import img1 from '../assets/img1.jpg';
+import img4 from '../assets/img4.jpg';
+
 const Home = () => {
   return (
 
@@ -20,53 +25,53 @@ const Home = () => {
     </div>
 
     <section class="text-center py-12 bg-gray-100">
-    <h2 class="text-3xl font-bold text-green-700 mb-8">SERVICES WE OFFER</h2>
+    <h2 class="text-3xl font-bold text-stone-600 mb-8">PACKAGES WE OFFER</h2>
     <div class="flex flex-wrap justify-center gap-6">
         
         {/* <!-- Airline Ticket Card --> */}
-        <div class="max-w-sm bg-white border border-gray-300 rounded-lg shadow-md overflow-hidden">
+        <div class="max-w-md bg-white border border-gray-300 rounded-lg lg:max-w-sm shadow-md overflow-hidden">
             <a href="#">
-                <img class="w-full h-56 object-cover transform transition-transform duration-300 hover:scale-105" src="/images/img8.webp" alt="Airline Ticket" />
+                <img class="w-full h-56 object-cover transform transition-transform duration-300 hover:scale-105" src={img1} alt="Airline Ticket" />
             </a>
             <div class="p-5">
                 <a href="#">
-                    <h5 class="text-xl font-bold text-gray-900 mb-2">Airline Ticket</h5>
+                    <h5 class="text-xl font-bold text-stone-600 mb-2">Hajj Package</h5>
                 </a>
                 <p class="text-gray-600 mb-4">Book affordable airline tickets to Makkah and embark on a spiritual journey with convenient flight options from major cities worldwide.</p>
-                <a href="#" class="inline-flex items-center px-4 py-2 text-white bg-green-700 rounded-md hover:bg-blue-700 transition-colors">
-                    Details
+                <a href="#" class="inline-flex items-center px-4 py-2 text-white bg-stone-500 rounded-md  transition-colors">
+                    More
                 </a>
             </div>
         </div>
         
         {/* <!-- Accommodation Card --> */}
-        <div class="max-w-sm bg-white border border-gray-300 rounded-lg shadow-md overflow-hidden">
+        <div class=" max-w-md bg-white border border-gray-300 rounded-lg lg:max-w-sm shadow-md overflow-hidden">
             <a href="#">
-                <img class="w-full h-56 object-cover transform transition-transform duration-300 hover:scale-105" src="/images/img4.jpg" alt="Accommodation" />
+                <img class="w-full h-56 object-cover transform transition-transform duration-300 hover:scale-105" src={img4} alt="Accommodation" />
             </a>
             <div class="p-5">
                 <a href="#">
-                    <h5 class="text-xl font-bold text-gray-900 mb-2">Accommodation</h5>
+                    <h5 class="text-xl font-bold text-stone-600 mb-2">Ramadhan Umrah Package</h5>
                 </a>
                 <p class="text-gray-600 mb-4">Experience unparalleled comfort and convenience with world-class accommodation options in Makkah, just steps away from the holy sites.</p>
-                <a href="#" class="inline-flex items-center px-4 py-2 text-white bg-green-700 rounded-md hover:bg-blue-700 transition-colors">
-                    Details
+                <a href="#" class="inline-flex items-center px-4 py-2 text-white bg-stone-500 rounded-md transition-colors">
+                    More
                 </a>
             </div>
         </div>
         
         {/* <!-- Hajj & Umrah Card --> */}
-        <div class="max-w-sm bg-white border border-gray-300 rounded-lg shadow-md overflow-hidden">
+        <div class="max-w-md bg-white border border-gray-300 rounded-lg lg:max-w-sm shadow-md overflow-hidden">
             <a href="#">
-                <img class="w-full h-56 object-cover transform transition-transform duration-300 hover:scale-105" src="/images/img5.jpg" alt="Hajj & Umrah" />
+                <img class="w-full h-56 object-cover transform transition-transform duration-300 hover:scale-105" src={img9} alt="Hajj & Umrah" />
             </a>
             <div class="p-5">
                 <a href="#">
-                    <h5 class="text-xl font-bold text-gray-900 mb-2">Hajj & Umrah</h5>
+                    <h5 class="text-xl font-bold text-stone-600 mb-2">Hotel & Tour Packages</h5>
                 </a>
                 <p class="text-gray-600 mb-4">Our agency ensures a smooth journey to Makkah with personalized packages, expert guidance, and full support for your Umrah or Hajj pilgrimage.</p>
-                <a href="#" class="inline-flex items-center px-4 py-2 text-white bg-green-700 rounded-md hover:bg-blue-700 transition-colors">
-                    Details
+                <a href="#" class="inline-flex items-center px-4 py-2 text-white bg-stone-500 rounded-md  transition-colors">
+                    More
                 </a>
             </div>
         </div>
@@ -76,11 +81,11 @@ const Home = () => {
 
 
 <section className=' py-16 bg-gray-100'>
-  <h1 className=' text-center text-5xl'>services</h1>
+  <h1 className=' text-center text-stone-600 capitalize text-5xl'>services</h1>
 <div className="flex flex-wrap justify-center gap-6  py-5">
-<div class="flex flex-col w-sm bg-white shadow-xl">
+<div class=" w-md flex flex-col lg:w-sm bg-white shadow-2xl">
   <div class="p-4 md:p-10">
-    <h3 class="text-lg font-bold text-gray-800 dark:text-white">
+    <h3 class="text-lg font-bold text-stone-600 dark:text-white">
       <li className='list-none'> <PiAirplaneLight size="2em" /> Airlines Booking  </li>
     </h3>
     <p class="mt-2 text-gray-500 dark:text-neutral-400">
@@ -89,9 +94,9 @@ const Home = () => {
    
   </div>
 </div>
-  <div class="flex flex-col w-sm bg-white shadow-2xl">
+  <div class="w-md flex flex-col lg:w-sm bg-white shadow-2xl">
   <div class="p-4 md:p-10">
-    <h3 class="text-lg font-bold text-gray-800 dark:text-white">
+    <h3 class="text-lg font-bold text-stone-600 dark:text-white">
       <li className='list-none'> <FcGlobe size="2em"/> </li>
     Hajj & Umrah Visa
     </h3>
@@ -101,9 +106,9 @@ const Home = () => {
    
   </div>
 </div>
-<div class="flex flex-col w-sm bg-white shadow-2xl">
+<div class="w-md flex flex-col lg:w-sm bg-white shadow-2xl">
   <div class="p-4 md:p-10">
-    <h3 class="text-lg font-bold text-gray-800 dark:text-white">
+    <h3 class="text-lg font-bold text-stone-600 dark:text-white">
       <li className=' list-none'>  <FaHotel size="2em" /> </li>
     Hotel bookings
 
@@ -114,9 +119,9 @@ const Home = () => {
    
   </div>
 </div>
-<div class="flex flex-col w-sm bg-white shadow-2xl">
+<div class="w-md flex flex-col lg:w-sm bg-white shadow-2xl">
   <div class="p-4 md:p-10">
-    <h3 class="text-lg font-bold text-gray-800 dark:text-white">
+    <h3 class="text-lg font-bold text-stone-600 dark:text-white">
       <li className=' list-none'> <FaBusAlt size="2em"/> </li>
     Transpositions
     </h3>
@@ -126,9 +131,9 @@ const Home = () => {
    
   </div>
 </div>
-<div class="flex flex-col w-sm bg-white shadow-2xl">
+<div class="w-md flex flex-col lg:w-sm bg-white shadow-2xl">
   <div class="p-4 md:p-10">
-    <h3 class="text-lg font-bold text-gray-800 dark:text-white">
+    <h3 class="text-lg font-bold text-stone-600 dark:text-white">
       <li className=' list-none'> <FaHandsHelping size="2em" /> </li>
       Assistance 
     </h3>
@@ -138,9 +143,9 @@ const Home = () => {
    
   </div>
 </div>
-<div class="flex flex-col w-sm bg-white shadow-xl">
+<div class="w-md flex flex-col lg:w-sm bg-white shadow-2xl">
   <div class="p-4 shadow-xl md:p-10">
-    <h3 class="text-lg font-bold text-gray-800 dark:text-white">
+    <h3 class="text-lg font-bold text-stone-600  dark:text-white">
       <li className=' list-none'> <FaMosque size="2em" />  </li>
     Sightseeing
     </h3>
@@ -157,7 +162,7 @@ const Home = () => {
 <section class="bg-white dark:bg-gray-900">
     <div class="container px-6 py-10 mx-auto">
         <h1 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">
-            What our <span class="text-blue-500 ">clients</span> say
+            What our <span class="text-stone-400 ">clients</span> say
         </h1>
 
         <p class="max-w-2xl mx-auto mt-6 text-center text-gray-500 dark:text-gray-300">
@@ -174,7 +179,7 @@ const Home = () => {
                     <img className='class="object-cover rounded-full w-14 h-14"' src="" alt="" />
                     
                     <div class="mx-4">
-                        <h1 class="font-semibold text-blue-500">yahya ahmed</h1>
+                        <h1 class="font-semibold text-stone-600">yahya ahmed</h1>
                         <span class="text-sm text-gray-500 dark:text-gray-300">CTO, Robert Consultency</span>
                     </div>
                 </div>
@@ -189,7 +194,7 @@ const Home = () => {
                     <img className='class="object-cover rounded-full w-14 h-14"' src="" alt="image" />
                     
                     <div class="mx-4">
-                        <h1 class="font-semibold text-blue-500">aisha mohamed</h1>
+                        <h1 class="font-semibold text-stone-600">aisha mohamed</h1>
                         <span class="text-sm text-gray-500 dark:text-gray-300">2025-01-23</span>
                     </div>
                 </div>
@@ -203,7 +208,7 @@ const Home = () => {
                     <img className='class="object-cover rounded-full w-14 h-14"' src="" alt="" />
                     
                     <div class="mx-4">
-                        <h1 class="font-semibold text-blue-500">ahmed farah</h1>
+                        <h1 class="font-semibold text-stone-600">ahmed farah</h1>
                         <span class="text-sm text-gray-500 dark:text-gray-300">2024-10-24</span>
                     </div>
                 </div>
@@ -220,7 +225,7 @@ const Home = () => {
                     <img className='class="object-cover rounded-full w-14 h-14"' src="" alt="" />
                     
                     <div class="mx-4">
-                        <h1 class="font-semibold text-blue-500">ahmed yusuf</h1>
+                        <h1 class="font-semibold text-stone-600">ahmed yusuf</h1>
                         <span class="text-sm text-gray-500 dark:text-gray-300">2024-12-20</span>
                     </div>
                 </div>
@@ -236,13 +241,13 @@ const Home = () => {
     <div class="container px-6 py-12 mx-auto">
         <div class="lg:flex lg:items-center lg:-mx-6">
             <div class="lg:w-1/2 lg:mx-6 lg:ml-28">
-                <h1 class="text-2xl font-semibold text-gray-800 capitalize dark:text-white lg:text-3xl">
+                <h1 class="text-2xl font-semibold text-stone-800 capitalize dark:text-white lg:text-3xl">
                     Contact us for <br /> more info
                 </h1>
 
                 <div class="mt-6 space-y-8 md:mt-8">
                     <p class="flex items-start -mx-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-blue-500 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-stone-500 dark:text-stone-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                         </svg>
@@ -254,7 +259,7 @@ const Home = () => {
                     </p>
 
                     <p class="flex items-start -mx-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-blue-500 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-stone-500 dark:text-stone-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                         </svg>
 
@@ -262,7 +267,7 @@ const Home = () => {
                     </p>
 
                     <p class="flex items-start -mx-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-blue-500 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-stone-500 dark:text-stone-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                         </svg>
 
@@ -274,13 +279,13 @@ const Home = () => {
                     <h3 class="text-gray-600 dark:text-gray-300 ">Follow us</h3>
 
                     <div class="flex mt-4 -mx-1.5 ">
-                        <a class="mx-1.5 dark:hover:text-blue-400 text-gray-400 transition-colors duration-300 transform hover:text-blue-500" href="#">
+                        <a class="mx-1.5 dark:hover:text-stone-400 text-gray-400 transition-colors duration-300 transform hover:text-stone-500" href="#">
                             <svg class="w-10 h-10 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M18.6668 6.67334C18.0002 7.00001 17.3468 7.13268 16.6668 7.33334C15.9195 6.49001 14.8115 6.44334 13.7468 6.84201C12.6822 7.24068 11.9848 8.21534 12.0002 9.33334V10C9.83683 10.0553 7.91016 9.07001 6.66683 7.33334C6.66683 7.33334 3.87883 12.2887 9.3335 14.6667C8.0855 15.498 6.84083 16.0587 5.3335 16C7.53883 17.202 9.94216 17.6153 12.0228 17.0113C14.4095 16.318 16.3708 14.5293 17.1235 11.85C17.348 11.0351 17.4595 10.1932 17.4548 9.34801C17.4535 9.18201 18.4615 7.50001 18.6668 6.67268V6.67334Z" />
                             </svg>
                         </a>
 
-                        <a class="mx-1.5 dark:hover:text-blue-400 text-gray-400 transition-colors duration-300 transform hover:text-blue-500" href="#">
+                        <a class="mx-1.5 dark:hover:text-stone-400 text-gray-400 transition-colors duration-300 transform hover:text-stone-500" href="#">
                             <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M15.2 8.80005C16.4731 8.80005 17.694 9.30576 18.5941 10.2059C19.4943 11.1061 20 12.327 20 13.6V19.2H16.8V13.6C16.8 13.1757 16.6315 12.7687 16.3314 12.4687C16.0313 12.1686 15.6244 12 15.2 12C14.7757 12 14.3687 12.1686 14.0687 12.4687C13.7686 12.7687 13.6 13.1757 13.6 13.6V19.2H10.4V13.6C10.4 12.327 10.9057 11.1061 11.8059 10.2059C12.7061 9.30576 13.927 8.80005 15.2 8.80005Z" fill="currentColor" />
                                 <path d="M7.2 9.6001H4V19.2001H7.2V9.6001Z" fill="currentColor" />
@@ -311,20 +316,20 @@ const Home = () => {
                     <form class="mt-6">
                         <div class="flex-1">
                             <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Full Name</label>
-                            <input type="text" placeholder="John Doe" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                            <input type="text" placeholder="John Doe" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-stone-400 dark:focus:border-stone-400 focus:ring-stone-400 focus:outline-none focus:ring focus:ring-opacity-40" />
                         </div>
 
                         <div class="flex-1 mt-6">
                             <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Email address</label>
-                            <input type="email" placeholder="johndoe@example.com" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                            <input type="email" placeholder="johndoe@example.com" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-stone-400 dark:focus:border-stone-400 focus:ring-stone-400 focus:outline-none focus:ring focus:ring-opacity-40" />
                         </div>
 
                         <div class="w-full mt-6">
                             <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Message</label>
-                            <textarea class="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" placeholder="Message"></textarea>
+                            <textarea class="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-stone-400 dark:focus:border-stone-400 focus:ring-stone-400 focus:outline-none focus:ring focus:ring-opacity-40" placeholder="Message"></textarea>
                         </div>
 
-                        <button class="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
+                        <button class="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-stone-500 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
                             get in touch
                         </button>
                     </form>
