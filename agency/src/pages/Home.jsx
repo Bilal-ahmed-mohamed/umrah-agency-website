@@ -9,6 +9,11 @@ import img8 from '../assets/img8.webp';
 import img9 from '../assets/img9.webp';
 import img1 from '../assets/img1.jpg';
 import img4 from '../assets/img4.jpg';
+import cta from '../assets/cta.jpg';
+import human1 from '../assets/human1.jpg';
+import human2 from '../assets/human2.jpeg';
+import human3 from '../assets/human3.jpg';
+import human4 from '../assets/human4.png';
 
 const Home = () => {
   return (
@@ -16,12 +21,15 @@ const Home = () => {
     <div>
       
     
-    <div class="bg-gradient-to-b from-blue-900 via-blue-800 to-blue-500 px-6 sm:py-20 py-10 font-[sans-serif]">
-      <div class="max-w-screen-xl mx-auto text-center text-white">
-        <h1 class="text-5xl max-sm:text-3xl font-extrabold leading-tight mb-6">Welcome to Our Premium Service</h1>
-        <p class="text-lg mb-12">Experience excellence like never before with our exclusive products and services.</p>
-        <button type="button" class="bg-blue-600 text-white text-lg tracking-wide px-8 py-2.5 rounded-full transition duration-300 ease-in-out shadow-lg hover:shadow-xl">Get Started</button>
-      </div>
+      <div
+      className="w-full h-[600px] bg-center bg-cover"
+      style={{ backgroundImage: `url(${cta})` }}>
+
+        <div className="flex flex-col items-center justify-center w-full h-full bg-gray-900/40">
+        <h1 className="  text-2xl text-stone-300 mb-7 lg:text-5xl">THE REAL AND GENUINE FRIEND ON BOARD</h1> 
+        <h2 className=" text-2xl text-white lg:text-4xl">Habibullah Agency</h2>
+        </div>
+
     </div>
 
     <section class="text-center py-12 bg-gray-100">
@@ -81,7 +89,7 @@ const Home = () => {
 
 
 <section className=' py-16 bg-gray-100'>
-  <h1 className=' text-center text-stone-600 capitalize text-5xl'>services</h1>
+  <h1 className=' text-center text-stone-600  font-bold capitalize text-3xl'>SERVICES</h1>
 <div className="flex flex-wrap justify-center gap-6  py-5">
 <div class=" w-md flex flex-col lg:w-sm bg-white shadow-2xl">
   <div class="p-4 md:p-10">
@@ -166,7 +174,7 @@ const Home = () => {
         </h1>
 
         <p class="max-w-2xl mx-auto mt-6 text-center text-gray-500 dark:text-gray-300">
-        Thinking why we are always the first choice of USA pilgrims to Book Umrah Packages 2025/ 1446? Take a look below:
+        Thinking why we are always the first choice of Kenyan  pilgrims to Book Umrah Packages 2025/ 1446? Take a look below:
         </p>
 
         <div class="grid grid-cols-1 gap-8 mx-auto mt-8 lg:grid-cols-2 xl:mt-10 max-w-7xl">
@@ -176,7 +184,7 @@ const Home = () => {
                 </p>
 
                 <div class="flex items-center mt-6">
-                    <img className='class="object-cover rounded-full w-14 h-14"' src="" alt="" />
+                    <img className='class="object-cover rounded-full w-16 h-14"' src={human1} alt="" />
                     
                     <div class="mx-4">
                         <h1 class="font-semibold text-stone-600">yahya ahmed</h1>
@@ -191,7 +199,7 @@ const Home = () => {
                 </p>
 
                 <div class="flex items-center mt-6">
-                    <img className='class="object-cover rounded-full w-14 h-14"' src="" alt="image" />
+                    <img className='class="object-cover rounded-full w-14 h-14"' src={human2} alt="image" />
                     
                     <div class="mx-4">
                         <h1 class="font-semibold text-stone-600">aisha mohamed</h1>
@@ -205,7 +213,7 @@ const Home = () => {
                 </p>
 
                 <div class="flex items-center mt-6">
-                    <img className='class="object-cover rounded-full w-14 h-14"' src="" alt="" />
+                    <img className='class="object-cover rounded-full w-14 h-14"' src={human3} alt="" />
                     
                     <div class="mx-4">
                         <h1 class="font-semibold text-stone-600">ahmed farah</h1>
@@ -222,7 +230,7 @@ const Home = () => {
                 </p>
 
                 <div class="flex items-center mt-6">
-                    <img className='class="object-cover rounded-full w-14 h-14"' src="" alt="" />
+                    <img className='class="object-cover rounded-full w-14 h-14"' src={human4} alt="" />
                     
                     <div class="mx-4">
                         <h1 class="font-semibold text-stone-600">ahmed yusuf</h1>
@@ -237,7 +245,7 @@ const Home = () => {
 </section>
 
 <section class="bg-white dark:bg-gray-900">
-  <h1 className='text-center text-5xl'>Contact Us </h1>
+  <h1 className='text-center text-stone-600 font-bold text-3xl'>CONTACT  US </h1>
     <div class="container px-6 py-12 mx-auto">
         <div class="lg:flex lg:items-center lg:-mx-6">
             <div class="lg:w-1/2 lg:mx-6 lg:ml-28">

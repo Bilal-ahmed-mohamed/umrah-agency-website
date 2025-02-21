@@ -2,17 +2,21 @@ import React from 'react'
 import img2 from '../assets/img1.jpg';
 import img3 from '../assets/img6.jpg';
 import img4 from '../assets/img4.jpg';
+import cta from '../assets/cta.jpg';
 const Umrah = () => {
   return (
     <div>
      
-     <div class="bg-gradient-to-b from-blue-900 via-blue-800 to-blue-500 px-6 sm:py-20 py-10 font-[sans-serif]">
-      <div class="max-w-screen-xl mx-auto text-center text-white">
-        <h1 class="text-5xl max-sm:text-3xl font-extrabold leading-tight mb-6">Welcome to Our Premium Service</h1>
-        <p class="text-lg mb-12">Experience excellence like never before with our exclusive products and services.</p>
-        <button type="button" class="bg-blue-600 text-white text-lg tracking-wide px-8 py-2.5 rounded-full transition duration-300 ease-in-out shadow-lg hover:shadow-xl">Get Started</button>
-      </div>
-    </div>
+     <div
+                  className="w-full h-[600px] bg-center bg-cover"
+                  style={{ backgroundImage: `url(${img3})` }}>
+            
+                    <div className="flex flex-col items-center justify-center w-full h-full bg-gray-900/40">
+                    <h1 className="  text-2xl text-white mb-7 lg:text-5xl"> Umrah Booking </h1> 
+                    <h2 className=" text-2xl text-white lg:text-xl">With 20+ years of expertise, advanced ticketing, trusted partners, and Ministry authorization, we craft seamless pilgrimage packages</h2>
+                    </div>
+            
+                </div>
 
     <section class="text-center py-12 bg-gray-100">
     <h2 class="text-3xl font-bold text-stone-700 mb-8">SERVICES WE OFFER</h2>
